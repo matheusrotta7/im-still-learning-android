@@ -32,4 +32,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun triggerKotlinJavaTest(view: View) {
+        val user = User("Matheus", 27)
+        user.logIn()
+    }
+
 }
