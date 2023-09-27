@@ -1,15 +1,8 @@
 package com.punchy.udemyempty
 
 //kotlin and java are interoperable
-class Message {
+class Message(private var user: User) {
 
-
-
-    private var user = User(null, 0)
-
-    constructor(user: User) {
-        this.user = user
-    }
 
     fun send() {
         if (user.name == null) {
